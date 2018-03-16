@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+"multipleuart\startup_stm32f091xc.o"
+"multipleuart\stm32f0xx_it.o"
+"multipleuart\stm32f0xx_hal_msp.o"
+"multipleuart\main.o"
+"multipleuart\stm32f0xx_hal_rcc.o"
+"multipleuart\stm32f0xx_hal_gpio.o"
+"multipleuart\stm32f0xx_hal_i2c_ex.o"
+"multipleuart\stm32f0xx_hal_tim_ex.o"
+"multipleuart\stm32f0xx_hal_i2c.o"
+"multipleuart\stm32f0xx_hal_pwr_ex.o"
+"multipleuart\stm32f0xx_hal_tim.o"
+"multipleuart\stm32f0xx_hal_uart.o"
+"multipleuart\stm32f0xx_hal_flash_ex.o"
+"multipleuart\stm32f0xx_hal_cortex.o"
+"multipleuart\stm32f0xx_hal_uart_ex.o"
+"multipleuart\stm32f0xx_hal_dma.o"
+"multipleuart\stm32f0xx_hal_flash.o"
+"multipleuart\stm32f0xx_hal.o"
+"multipleuart\stm32f0xx_hal_pwr.o"
+"multipleuart\stm32f0xx_hal_rcc_ex.o"
+"multipleuart\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "MultipleUART\MultipleUART.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MultipleUART.map" -o MultipleUART\MultipleUART.axf
